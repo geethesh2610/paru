@@ -1,0 +1,290 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+ 
+}
+    
+#indexid {
+    
+    background: #F2EDD7;
+    margin: 0%;
+    
+}
+
+#paruid {
+    background: #F2EDD7;
+    font-size: 1.5rem ;
+}
+
+#barthuid {
+    background: #F2EDD7;
+    font-size: 1.5rem ;
+}
+
+#vegaid {
+    background: #F2EDD7;
+    font-size: 1.5rem ;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    background: linear-gradient(to right, #D83A56,#FF616D);
+    z-index: 1;
+}
+
+
+
+header .logo{
+    color: #FFEAC9;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+header ul{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+    margin: 20px;
+    
+}
+
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #FFEAC9;
+    font-size: 15px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+header ul li a:hover{
+    background: #FFEAC9;
+    color: #D83A56;
+}
+
+img{
+    height: 150px;
+    width: 150px;
+}
+p {
+    font-size: 20px;
+}
+
+
+header .a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+hr {
+
+    border: dotted grey 6px;
+    border-bottom: none;
+    width: 5%;               
+    height: 1px;
+    margin: 150px auto;
+    
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+}
+
+.main{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    
+    z-index: 1;
+    
+}
+
+.main ul{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.main ul li{
+    position: relative;
+    list-style: none;
+    margin: 20px;
+    
+}
+
+.main ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #FFEAC9;
+    font-size: 15px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.main ul li a:hover{
+    background: #FFEAC9;
+    color: #343A40;
+}
+
+.vegapara {
+    border: 2px solid #A7C4BC ;
+    padding: 20px 20px 20px 20px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+}
+
+.vegapara:hover {
+    background: #A7C4BC;
+}
+
+.vega_h1 {
+    font-size: 60px;
+    color: #FFEAC9 ;
+}
+
+.vegathink {
+    color: #FFEAC9 ;
+}
+
+.vegamol {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+
+}
+.content {
+    margin: 30px 30px 30px 30px;
+    padding: 10px 10px;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    transform-style: preserve-3d;
+    top: 200px;
+    
+    
+}
+.content .first{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 20px 0;
+    perspective: 1000px;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    border-radius: 10px;
+}
+
+.content .first .imgbox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: top;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    transition-delay: 0.2s;
+
+}
+
+.content .first:hover .imgbox {
+    transform: rotateX(-90deg);
+    opacity: 0;
+    transition-delay: 0s;
+}
+
+.content .first .imgbox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.content .first .contentbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #A0937D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    transform-origin: bottom;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    transform: rotateX(90deg);
+    opacity: 0;
+    color: #F2EDD7;
+
+}
+
+.content .first:hover .contentbox {
+    transform: rotateX(0deg);
+    opacity: 1;
+    transition-delay: 0.2s;
+}
+
+.paruhd {
+    font-size: 30px;
+    font-weight: 500;
+    color: #D83A56;
+    background-color: #FFEAC9;
+    border-radius: 50px;
+    padding: 15px 15px;
+}
+
+#indexweb {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+  
+}
+
